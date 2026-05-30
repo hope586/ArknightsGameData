@@ -1,0 +1,32 @@
+name: Sync fork with upstream
+
+# Keeps hope586/ArknightsGameData's `master` in sync with the upstream
+# Kengxxiao/ArknightsGameData by merging upstream/master once per day.
+# Manual runs are possible from the Actions tab (workflow_dispatch).
+
+on:
+  schedule:
+    - cron: '34 12 * * *'      # daily ~20:34 Beijing time (12:34 UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout fork (full history)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Merge upstream/master and push
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote add upstream https://github.com/Kengxxiao/ArknightsGameData.git
+          git fetch --no-tags upstream master
+          git merge --no-edit upstream/master
+          git push origin master
