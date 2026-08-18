@@ -10,6 +10,7 @@
     "isTrainingLevel": false,
     "isHardTrainingLevel": false,
     "isPredefinedCardsSelectable": false,
+    "displayRestTime": false,
     "maxPlayTime": -1.0,
     "functionDisableMask": "NONE",
     "configBlackBoard": null
@@ -1271,9 +1272,9 @@
           "valueStr": null
         },
         {
-          "key": "activity_dependent_ui_plugin_name",
+          "key": "ui_plugin_path",
           "value": 0.0,
-          "valueStr": "act44side"
+          "valueStr": "Arts/UI/[UC]BattleCommon/UI_BATTLE_PLUGIN/act44side_battle_ui_plugin.prefab"
         },
         {
           "key": "sp",
@@ -2723,6 +2724,14 @@
           "attractImmune": {
             "m_defined": false,
             "m_value": false
+          },
+          "teleportImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "groundBoundImmune": {
+            "m_defined": false,
+            "m_value": false
           }
         },
         "applyWay": {
@@ -3633,7 +3642,8 @@
             "value": 0.0,
             "valueStr": null
           }
-        ]
+        ],
+        "overrideTalents": null
       }
     ],
     "characterCards": [],
@@ -3656,7 +3666,8 @@
         "mainSkillLvl": 1,
         "skinId": "",
         "tmplId": null,
-        "overrideSkillBlackboard": null
+        "overrideSkillBlackboard": null,
+        "overrideTalents": null
       }
     ]
   },

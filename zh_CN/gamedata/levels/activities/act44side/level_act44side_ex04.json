@@ -10,6 +10,7 @@
     "isTrainingLevel": false,
     "isHardTrainingLevel": false,
     "isPredefinedCardsSelectable": false,
+    "displayRestTime": false,
     "maxPlayTime": -1.0,
     "functionDisableMask": "NONE",
     "configBlackBoard": null
@@ -963,9 +964,9 @@
           "valueStr": null
         },
         {
-          "key": "activity_dependent_ui_plugin_name",
+          "key": "ui_plugin_path",
           "value": 0.0,
-          "valueStr": "act44side"
+          "valueStr": "Arts/UI/[UC]BattleCommon/UI_BATTLE_PLUGIN/act44side_battle_ui_plugin.prefab"
         },
         {
           "key": "sp",
@@ -5318,7 +5319,8 @@
             "value": 200.0,
             "valueStr": null
           }
-        ]
+        ],
+        "overrideTalents": null
       },
       {
         "position": {
@@ -5388,7 +5390,8 @@
             "value": 200.0,
             "valueStr": null
           }
-        ]
+        ],
+        "overrideTalents": null
       },
       {
         "position": {
@@ -5458,7 +5461,8 @@
             "value": 200.0,
             "valueStr": null
           }
-        ]
+        ],
+        "overrideTalents": null
       },
       {
         "position": {
@@ -5528,7 +5532,8 @@
             "value": 200.0,
             "valueStr": null
           }
-        ]
+        ],
+        "overrideTalents": null
       },
       {
         "position": {
@@ -5598,7 +5603,8 @@
             "value": 200.0,
             "valueStr": null
           }
-        ]
+        ],
+        "overrideTalents": null
       },
       {
         "position": {
@@ -5638,7 +5644,8 @@
             "value": 5.0,
             "valueStr": null
           }
-        ]
+        ],
+        "overrideTalents": null
       },
       {
         "position": {
@@ -5678,7 +5685,8 @@
             "value": 5.0,
             "valueStr": null
           }
-        ]
+        ],
+        "overrideTalents": null
       }
     ],
     "characterCards": [],
